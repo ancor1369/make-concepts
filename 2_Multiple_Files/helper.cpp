@@ -6,12 +6,12 @@ namespace sample
 
 helper::helper()
 {
-    std::cout << "Helper created" << std::endl;
+    std::cout << "Helper created with" << std::endl;
 }
 
 helper::~helper()
 {
-    std::cout << "Helper destructor" << std::endl;
+    std::cout << "Helper destructed" << std::endl;
 }
 
 } // namespace helper

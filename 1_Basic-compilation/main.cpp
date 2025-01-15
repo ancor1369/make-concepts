@@ -2,6 +2,6 @@
 
 int main()
 {
-    std::cout << "This is the first exercise" << std::endl;
+    std::cout << "This is the first exercise with modification" << std::endl;
     return 0;
 }
