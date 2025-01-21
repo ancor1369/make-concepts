@@ -11,7 +11,7 @@ helper::helper()
 
 helper::~helper()
 {
-    std::cout << "Helper destructor" << std::endl;
+    std::cout << "Helper destructed" << std::endl;
 }
 
 } // namespace helper
