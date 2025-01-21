@@ -1,0 +1,9 @@
+# Kconfig
+menu "My Standalone Program"
+
+config INCLUDE_OPTIONAL_SOURCE
+    bool "Include optional source code"
+    help
+      Select this option to include the optional_source.c file in the build.
+
+endmenu
