@@ -1,9 +1,10 @@
 
 # Compilation steps
 
-# Linking math library
+# Linking nlohman Json library
 
-Math library can be accessed via -lm
+Install the nlohmann-json library: sudo apt-get install nlohmann-json3-dev
+run: sudo make install-pkg-config
 
 # Run the preprocessor
 `g++ -e main.cpp -o main.i`

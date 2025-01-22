@@ -1,16 +1,15 @@
 #include <iostream>
 #include "helper.hpp"
-#include <math.h>
-#include <ncurses.h>
+
+//Type alias
+using json = nlohmann::json;
 
 namespace sample
 {
 
 helper::helper()
 {
-    std::cout << "Helper created" << std::endl;
-    printw("Calling functions from ncurses");
-    refresh();
+    std::cout << "Helper created" << std::endl;    
 }
 
 helper::~helper()
@@ -18,10 +17,14 @@ helper::~helper()
     std::cout << "Helper destructor" << std::endl;
 }
 
-float helper::calculate_log10(float number)
+std::string helper::load_json_object()
 {
-    std::cout << "Calculating log10 function of " << number << std::endl;
-    return log10(number);
+    json sample_object;
+
+    sample_object["one"] = "Value for property One";
+    sample_object["two"] = "Value for property Two";    
+    
+    return sample_object.dump(1);
 }
 
 } // namespace helper

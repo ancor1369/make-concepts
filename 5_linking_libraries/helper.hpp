@@ -1,4 +1,4 @@
-
+#include <nlohmann/json.hpp>
 
 namespace sample
 {
@@ -8,7 +8,7 @@ class helper
 public:
     helper();
     ~helper();
-    float calculate_log10(float number);
+    std::string load_json_object();
 };
 
 }
