@@ -1,8 +1,0 @@
-prefix=/usr
-includedir=${prefix}/include
-
-Name: nlohmann_json
-Description: JSON for Modern C++
-Version: 3.0.0
-Cflags: -I${includedir}/nlohmann
-Libs:
